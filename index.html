@@ -3,8 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hydro 8 — Hidrógeno molecular para pacientes Barox | Agua Hidrogenada Chile</title>
-<meta name="description" content="Continúa el efecto anti-inflamatorio de tu cámara hiperbárica todos los días. Hydro 8, la botella que hidrogeniza tu agua. Beneficio exclusivo para pacientes Barox.">
+<title>Agua Hidrogenada × Barox — Hidrógeno molecular con 10% OFF para clientes Barox</title>
+<meta name="description" content="Continúa el efecto anti-inflamatorio de tu cámara hiperbárica todos los días con agua hidrogenada. Gama completa con hidrógeno molecular y 10% OFF exclusivo para clientes Barox.">
+
+<!-- Open Graph / vista previa al compartir (WhatsApp, redes).
+     REEMPLAZAR https://TU-DOMINIO por la URL final donde se publique el landing. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hydro 8 — El efecto de tu cámara hiperbárica, todos los días">
+<meta property="og:description" content="Continúa tu protocolo anti-inflamatorio con hidrógeno molecular. 10% OFF exclusivo para clientes Barox en toda la gama de agua hidrogenada.">
+<meta property="og:image" content="https://TU-DOMINIO/assets/hydro8-producto.png">
+<meta property="og:url" content="https://TU-DOMINIO/">
+<meta property="og:locale" content="es_CL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agua Hidrogenada — Beneficio clientes Barox">
+<meta name="twitter:description" content="Hidrógeno molecular en el agua que tomas cada día. 10% OFF clientes Barox.">
+<meta name="twitter:image" content="https://TU-DOMINIO/assets/hydro8-producto.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -82,14 +96,14 @@
   .topbar {
     background: var(--white);
     border-bottom: 1px solid var(--line);
-    padding: 14px 0;
+    padding: 18px 0;
   }
   .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-  .brand-lockup { display: flex; align-items: center; gap: 16px; }
+  .brand-lockup { display: flex; align-items: center; gap: 22px; }
   .brand-lockup img { width: auto; display: block; }
-  .brand-lockup .logo-agua { height: 24px; }
-  .brand-lockup .logo-barox { height: 34px; }
-  .brand-x { color: #c3d6da; font-weight: 300; font-size: 18px; }
+  .brand-lockup .logo-agua { height: 36px; }
+  .brand-lockup .logo-barox { height: 52px; }
+  .brand-x { color: #c3d6da; font-weight: 300; font-size: 22px; }
   .topbar .btn { padding: 10px 20px; font-size: 14px; }
 
   /* ── Hero ── */
@@ -122,8 +136,8 @@
   /* Product visual */
   .product-visual {
     background: linear-gradient(155deg, #0f3a40 0%, #0e7490 70%, #15909e 120%);
-    border-radius: 24px;
-    padding: 24px;
+    border-radius: 4px;
+    padding: 28px;
     text-align: center;
     box-shadow: 0 24px 60px rgba(14,58,64,0.22);
     position: relative;
@@ -132,8 +146,8 @@
   .price-tag {
     position: absolute; top: 16px; right: 16px; z-index: 3;
     background: var(--green); color: #fff;
-    font-size: 12px; font-weight: 700; letter-spacing: .04em;
-    padding: 7px 13px; border-radius: 999px;
+    font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+    padding: 8px 13px; border-radius: 3px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.22);
   }
 
@@ -177,6 +191,24 @@
   .facility-grid img { width: 100%; height: 210px; object-fit: cover; display: block; transition: transform .45s ease; }
   .facility-grid figure:hover img { transform: scale(1.05); }
 
+  /* ── Range / Gama de soluciones ── */
+  .range { background: var(--white); }
+  .range-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 38px; }
+  .range-card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
+  .range-card:hover { border-color: var(--teal); box-shadow: 0 16px 36px rgba(8,145,178,0.14); transform: translateY(-3px); }
+  .range-frame { position: relative; background: #f7fbfc; border-bottom: 1px solid var(--line); }
+  .range-frame img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+  .range-off { position: absolute; top: 10px; left: 10px; background: var(--green); color: #fff; font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 5px 9px; border-radius: 3px; }
+  .range-body { padding: 20px 20px 22px; display: flex; flex-direction: column; flex: 1; }
+  .range-tag { font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--teal); margin-bottom: 8px; }
+  .range-body h3 { font-family: 'Newsreader', serif; font-size: 22px; color: var(--ink); margin-bottom: 8px; }
+  .range-body p { font-size: 13.5px; line-height: 1.55; color: var(--muted); margin: 0 0 16px; flex: 1; }
+  .range-price { font-size: 15px; font-weight: 700; color: var(--ink); font-family: 'Inter', sans-serif; }
+  .range-price small { display: block; font-size: 11px; font-weight: 600; color: var(--green); letter-spacing: .02em; margin-top: 2px; }
+  .range-cta { margin-top: 16px; display: inline-flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 600; color: var(--teal-deep); text-decoration: none; }
+  .range-cta svg { width: 15px; height: 15px; transition: transform .2s ease; }
+  .range-card:hover .range-cta svg { transform: translateX(3px); }
+
   /* ── Benefits ── */
   .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 38px; }
   .benefit { text-align: left; padding: 28px 24px; background: var(--white); border: 1px solid var(--line); border-radius: 16px; transition: border-color .2s ease, box-shadow .2s ease; }
@@ -194,7 +226,7 @@
     border: 1px solid var(--line);
     border-radius: 24px; padding: 40px;
   }
-  .offer-visual { background: linear-gradient(155deg, #0f3a40, #0e7490); border-radius: 18px; padding: 22px; text-align: center; }
+  .offer-visual { background: linear-gradient(155deg, #0f3a40, #0e7490); border-radius: 4px; padding: 26px; text-align: center; }
   .offer-visual img { width: 70%; max-width: 220px; height: auto; margin: 0 auto; display: block; filter: drop-shadow(0 14px 24px rgba(0,0,0,0.35)); }
   .offer h3 { font-size: 26px; margin-bottom: 8px; }
   .price-row { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin: 14px 0 6px; }
@@ -218,6 +250,40 @@
   .final h2 { margin-bottom: 14px; }
   .final p { font-size: 16px; color: var(--text); max-width: 480px; margin: 0 auto 28px; }
 
+  /* ── Testimonials ── */
+  .testi { background: var(--bg); }
+  .rating-badge { display: inline-flex; align-items: center; gap: 10px; background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; margin-bottom: 26px; font-size: 13px; font-weight: 600; color: var(--ink); }
+  .stars { display: inline-flex; gap: 2px; color: #f4a72b; }
+  .stars svg { width: 16px; height: 16px; }
+  .testi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 8px; }
+  .testi-card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 26px 26px; }
+  .testi-card .stars { margin-bottom: 12px; }
+  .testi-card blockquote { margin: 0 0 16px; font-size: 15.5px; line-height: 1.65; color: var(--text); }
+  .testi-author { display: flex; align-items: center; gap: 12px; }
+  .testi-avatar { width: 38px; height: 38px; border-radius: 50%; background: #e1f4f8; color: var(--teal-deep); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; flex-shrink: 0; }
+  .testi-name { font-size: 14px; font-weight: 600; color: var(--ink); }
+  .testi-meta { font-size: 12px; color: var(--muted); }
+
+  /* ── Specs ── */
+  .specs { background: var(--white); }
+  .specs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; margin-top: 34px; }
+  .spec { background: #fff; padding: 24px 22px; }
+  .spec dt { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
+  .spec dd { margin: 0; font-size: 15px; color: var(--ink); font-weight: 500; line-height: 1.5; }
+
+  /* ── FAQ ── */
+  .faq { background: var(--bg); }
+  .faq-list { margin-top: 30px; border-top: 1px solid var(--line); }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary { list-style: none; cursor: pointer; padding: 20px 44px 20px 0; position: relative; font-size: 16.5px; font-weight: 600; color: var(--ink); }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; position: absolute; right: 8px; top: 16px; font-size: 24px; font-weight: 400; color: var(--teal); transition: transform .2s ease; }
+  .faq-item[open] summary::after { content: '\2212'; }
+  .faq-item p { font-size: 15px; color: var(--muted); margin: 0 0 20px; max-width: 720px; }
+
+  /* ── Sticky mobile buy bar ── */
+  .buybar { display: none; }
+
   /* ── Footer ── */
   footer { background: var(--white); border-top: 1px solid var(--line); padding: 36px 0; }
   footer .wrap { text-align: center; }
@@ -240,8 +306,27 @@
     .facility-grid { grid-template-columns: 1fr; }
     .facility-grid img { height: 240px; }
     .benefits-grid { grid-template-columns: 1fr; }
+    .range-grid { grid-template-columns: 1fr 1fr; }
+    .testi-grid { grid-template-columns: 1fr; }
+    .specs-grid { grid-template-columns: 1fr 1fr; }
     .offer-card { grid-template-columns: 1fr; padding: 28px; }
     .offer-visual { max-width: 280px; margin: 0 auto; }
+
+    /* Sticky buy bar on mobile/tablet */
+    body { padding-bottom: 74px; }
+    .buybar {
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+      background: rgba(255,255,255,0.96); backdrop-filter: blur(8px);
+      border-top: 1px solid var(--line); padding: 12px 18px;
+      box-shadow: 0 -6px 20px rgba(14,58,64,0.10);
+    }
+    .buybar-info { line-height: 1.2; }
+    .buybar-price { font-size: 18px; font-weight: 800; color: var(--ink); font-family: 'Inter', sans-serif; }
+    .buybar-was { font-size: 12px; color: var(--muted); text-decoration: line-through; margin-left: 6px; }
+    .buybar-label { font-size: 11px; color: var(--teal-deep); font-weight: 600; }
+    .buybar .btn { padding: 13px 22px; font-size: 15px; box-shadow: none; }
+    .buybar .btn:hover { transform: none; }
   }
   @media (max-width: 460px) {
     .brand-lockup { gap: 10px; }
@@ -250,12 +335,16 @@
     .topbar .btn { padding: 9px 15px; font-size: 13px; }
     section { padding: 52px 0; }
     .offer-card { padding: 22px; }
+    .specs-grid { grid-template-columns: 1fr; }
+    .range-grid { grid-template-columns: 1fr; }
   }
 
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
     .btn:hover, .benefit:hover { transform: none; }
     .facility-grid figure:hover img { transform: none; }
+    .range-card:hover { transform: none; }
+    .range-card:hover .range-cta svg { transform: none; }
   }
 </style>
 </head>
@@ -278,9 +367,9 @@
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow"><span class="dot"></span>Beneficio pacientes Barox</span>
+      <span class="eyebrow"><span class="dot"></span>Beneficio clientes Barox</span>
       <h1>El efecto de tu cámara hiperbárica, <em>todos los días.</em></h1>
-      <p class="hero-sub">En Barox combates la inflamación con oxígeno hiperbárico. <strong>Hydro 8</strong> la mantiene a raya entre sesiones: hidrógeno molecular en el agua que tomas cada día.</p>
+      <p class="hero-sub">En Barox potencias tu recuperación con oxígeno hiperbárico. El <strong>agua hidrogenada</strong> la sostiene entre sesiones: hidrógeno molecular en cada vaso, todos los días.</p>
       <div class="hero-actions">
         <a class="btn" href="https://aguahidrogenada.cl/products/hydro-8?dt_id=3235305" target="_blank" rel="noopener">
           Comprar con beneficio
@@ -294,7 +383,7 @@
       </div>
     </div>
     <div class="product-visual">
-      <span class="price-tag">AHORRA 20%</span>
+      <span class="price-tag">10% OFF Barox</span>
       <img src="assets/hydro8-producto.png" alt="Botella Hydro 8 que hidrogeniza el agua">
     </div>
   </div>
@@ -331,7 +420,7 @@
 <!-- BRIDGE: por qué se complementan -->
 <section class="bridge" id="como-funciona">
   <div class="wrap">
-    <div class="section-label">Por qué te conviene</div>
+    <div class="section-label">Aumenta tu recuperación</div>
     <h2>Dos terapias, un mismo objetivo:<br>menos inflamación.</h2>
     <p class="lead">La cámara hiperbárica actúa por sesiones. El agua hidrogenada actúa las 24 horas. Juntas sostienen el mismo mecanismo anti-inflamatorio sin que tengas que pensarlo.</p>
     <div class="bridge-grid">
@@ -343,10 +432,61 @@
       </div>
       <div class="bridge-card">
         <div class="ic ic-h2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5S6 9 6 14a6 6 0 0 0 12 0c0-5-6-11.5-6-11.5Z"/></svg></div>
-        <div class="bridge-tag h2">Hydro 8 · Cada día</div>
+        <div class="bridge-tag h2">Agua hidrogenada · Cada día</div>
         <h3>Hidrógeno molecular</h3>
-        <p>El H₂ es el antioxidante más pequeño que existe: acompaña tu hidratación diaria para sostener el bienestar entre una sesión y la siguiente.</p>
+        <p>El hidrógeno molecular es el antioxidante más pequeño que existe: acompaña tu hidratación diaria para sostener el bienestar entre una sesión y la siguiente.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- RANGE / GAMA -->
+<section class="range">
+  <div class="wrap">
+    <div class="section-label">La gama de agua hidrogenada</div>
+    <h2>Una fuente de hidrógeno molecular<br>para cada espacio de tu vida.</h2>
+    <p class="lead">Del vaso que llevas contigo a la estación que abastece tu hogar, toda la línea genera hidrógeno molecular con tecnología KYK Korea. Los clientes Barox acceden a un 10% OFF en toda la gama.</p>
+    <div class="range-grid">
+      <article class="range-card">
+        <div class="range-frame"><img src="assets/prod-hydro8.jpg" alt="Hydro 8, botella portátil de agua hidrogenada" loading="lazy"><span class="range-off">10% OFF Barox</span></div>
+        <div class="range-body">
+          <div class="range-tag">Portátil</div>
+          <h3>Hydro 8</h3>
+          <p>Botella que genera hidrógeno molecular en 5 minutos. Tu hidratación funcional, donde vayas.</p>
+          <div class="range-price">$149.990<small>10% OFF clientes Barox</small></div>
+          <a class="range-cta" href="https://aguahidrogenada.cl/products/hydro-8?dt_id=3235305" target="_blank" rel="noopener">Ver producto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="range-card">
+        <div class="range-frame"><img src="assets/prod-repia.jpg" alt="REPIA 88, generador de agua hidrogenada fría y caliente" loading="lazy"><span class="range-off">10% OFF Barox</span></div>
+        <div class="range-body">
+          <div class="range-tag">Hogar</div>
+          <h3>REPIA 88</h3>
+          <p>Generador de agua hidrogenada fría y caliente. Hidrógeno molecular listo para servir, cada día.</p>
+          <div class="range-price">$856.800<small>10% OFF clientes Barox</small></div>
+          <a class="range-cta" href="https://aguahidrogenada.cl/products/repia-88-generador-de-agua-hidrogenada-fria-y-caliente?dt_id=3235305" target="_blank" rel="noopener">Ver producto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="range-card">
+        <div class="range-frame"><img src="assets/prod-higen2.jpg" alt="Higen 2+, estación generadora de agua hidrogenada, ozonizada y purificada" loading="lazy"><span class="range-off">10% OFF Barox</span></div>
+        <div class="range-body">
+          <div class="range-tag">Estación</div>
+          <h3>Higen 2+</h3>
+          <p>Genera agua hidrogenada, ozonizada y purificada. Tres funciones en una sola fuente para el hogar.</p>
+          <div class="range-price">$1.300.000<small>10% OFF clientes Barox</small></div>
+          <a class="range-cta" href="https://aguahidrogenada.cl/products/higen-2?dt_id=3235305" target="_blank" rel="noopener">Ver producto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="range-card">
+        <div class="range-frame"><img src="assets/prod-kuf.jpg" alt="KUF, monomando generador de hidrógeno molecular, ozono y agua purificada" loading="lazy"><span class="range-off">10% OFF Barox</span></div>
+        <div class="range-body">
+          <div class="range-tag">Integrado</div>
+          <h3>KUF</h3>
+          <p>Monomando que genera hidrógeno molecular, ozono y agua purificada, con giro de 180°. Se integra a tu cocina.</p>
+          <div class="range-price">$1.499.990<small>10% OFF clientes Barox</small></div>
+          <a class="range-cta" href="https://aguahidrogenada.cl/products/maquina-kuf?dt_id=3235305" target="_blank" rel="noopener">Ver producto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -354,9 +494,9 @@
 <!-- BENEFITS -->
 <section>
   <div class="wrap">
-    <div class="section-label">Hydro 8</div>
-    <h2>La botella que hidrogeniza tu agua</h2>
-    <p class="lead">Generas agua con hidrógeno molecular en minutos, donde estés. Simple, portátil y lista para tu rutina.</p>
+    <div class="section-label">Agua hidrogenada</div>
+    <h2>Qué aporta el hidrógeno molecular</h2>
+    <p class="lead">Un antioxidante selectivo que acompaña tu hidratación diaria. Estos son los beneficios que más valoran quienes lo incorporan a su rutina.</p>
     <div class="benefits-grid">
       <div class="benefit">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5S6 9 6 14a6 6 0 0 0 12 0c0-5-6-11.5-6-11.5Z"/></svg></div>
@@ -377,6 +517,40 @@
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="testi">
+  <div class="wrap">
+    <div class="section-label">Lo que dicen quienes ya la usan</div>
+    <h2>Resultados que se sienten.</h2>
+    <span class="rating-badge">
+      <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg></span>
+      96% de reseñas positivas · 26 de 27 clientes
+    </span>
+    <div class="testi-grid">
+      <article class="testi-card">
+        <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg></span>
+        <blockquote>“Hace más de dos años que me hidrato con agua hidrogenada y me encantan sus beneficios: me ayuda a sentirme con más energía y menos hinchado.”</blockquote>
+        <div class="testi-author"><div class="testi-avatar">JS</div><div><div class="testi-name">Jorge Sepúlveda</div><div class="testi-meta">Cliente verificado</div></div></div>
+      </article>
+      <article class="testi-card">
+        <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg></span>
+        <blockquote>“El producto es muy bueno y entrega beneficios reales al organismo. Adquirí 2 unidades, una especialmente para mi mamá, y ha sido un gran aporte para su tratamiento a los riñones.”</blockquote>
+        <div class="testi-author"><div class="testi-avatar">FA</div><div><div class="testi-name">Freddy Álvarez</div><div class="testi-meta">Cliente verificado</div></div></div>
+      </article>
+      <article class="testi-card">
+        <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg></span>
+        <blockquote>“Me encantó. Soy muy mala para tomar agua, pero desde que tengo mi botella empecé a tomar mucho más.”</blockquote>
+        <div class="testi-author"><div class="testi-avatar">VR</div><div><div class="testi-name">Valentina Reyes</div><div class="testi-meta">Cliente verificado</div></div></div>
+      </article>
+      <article class="testi-card">
+        <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.6 6.7L12 17l-6.2 3.6 1.6-6.7L2.2 8.9l6.9-.6z"/></svg></span>
+        <blockquote>“Se siente más liviana y muy agradable en sabor. Como deportista toda mi vida, me llegó de maravilla para el gym.”</blockquote>
+        <div class="testi-author"><div class="testi-avatar">✓</div><div><div class="testi-name">Cliente verificado</div><div class="testi-meta">Deportista</div></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- OFFER -->
 <section class="offer">
   <div class="wrap">
@@ -385,12 +559,12 @@
         <img src="assets/hydro8-producto.png" alt="Botella Hydro 8">
       </div>
       <div>
-        <div class="section-label">Beneficio exclusivo Barox</div>
+        <div class="section-label">Recomendado para empezar · Cliente Barox</div>
         <h3>Hydro 8</h3>
         <div class="price-row">
-          <span class="price-now">$119.990</span>
+          <span class="price-now">$134.990</span>
           <span class="price-was">$149.990</span>
-          <span class="price-save">AHORRA 20%</span>
+          <span class="price-save">10% OFF Barox</span>
         </div>
         <ul>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Envío gratis a todo Chile</li>
@@ -406,14 +580,47 @@
   </div>
 </section>
 
+<!-- SPECS -->
+<section class="specs">
+  <div class="wrap">
+    <div class="section-label">Ficha técnica</div>
+    <h2>Hydro 8 por dentro</h2>
+    <p class="lead">Tecnología de hidrogenización en una botella portátil de grado médico.</p>
+    <dl class="specs-grid">
+      <div class="spec"><dt>Capacidad</dt><dd>280 ml</dd></div>
+      <div class="spec"><dt>Concentración H₂</dt><dd>1.500 PPB en 5 min · 3.000 PPB en 10 min</dd></div>
+      <div class="spec"><dt>Batería</dt><dd>USB-C · 20 ciclos de 5 min por carga</dd></div>
+      <div class="spec"><dt>Tiempo de carga</dt><dd>3 horas</dd></div>
+      <div class="spec"><dt>Materiales</dt><dd>PSU grado médico · membranas de titanio con platino · libre de BPA</dd></div>
+      <div class="spec"><dt>Dimensiones</dt><dd>6 cm Ø × 23 cm de alto</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="section-label">Preguntas frecuentes</div>
+    <h2>Antes de comprar</h2>
+    <div class="faq-list">
+      <details class="faq-item"><summary>¿Cómo funciona Hydro 8?</summary><p>Mediante electrólisis enriquece el agua con hidrógeno molecular (H₂) en 5 a 10 minutos. Solo llenas la botella, presionas y listo para beber.</p></details>
+      <details class="faq-item"><summary>¿Cuánto dura la batería?</summary><p>Hasta 20 ciclos de 5 minutos por carga. Se recarga por cable USB-C en unas 3 horas, así que la usas donde estés.</p></details>
+      <details class="faq-item"><summary>¿Cómo aplico el 10% OFF para clientes Barox?</summary><p>El descuento del 10% ya viene aplicado al comprar desde los botones de esta página, en toda la gama. No necesitas ingresar ningún código.</p></details>
+      <details class="faq-item"><summary>¿Tiene garantía y envío?</summary><p>Sí: 12 meses de garantía y envío gratis a todo Chile.</p></details>
+      <details class="faq-item"><summary>¿Es segura? ¿De qué está hecha?</summary><p>Usa carcasa de PSU grado médico, membranas de titanio con platino y es libre de BPA.</p></details>
+      <details class="faq-item"><summary>¿Reemplaza mis sesiones en Barox?</summary><p>No. Hydro 8 es un complemento de bienestar para tu día a día y no reemplaza tu tratamiento ni la indicación de un profesional de la salud.</p></details>
+    </div>
+  </div>
+</section>
+
 <!-- CREDIBILITY -->
 <section class="cred">
   <div class="wrap">
-    <div class="section-label">Respaldo</div>
-    <h2>Hidrógeno molecular, en serio.</h2>
-    <p>El hidrógeno molecular (H₂) es una de las líneas más estudiadas en bienestar y recuperación celular. Los equipos KYK Korea —representados en Chile por Agua Hidrogenada Chile— producen H₂ a concentraciones estables y medibles. Hydro 8 lleva esa tecnología a una botella portátil que usas cada día.</p>
-    <a class="btn" href="https://aguahidrogenada.cl/products/hydro-8?dt_id=3235305" target="_blank" rel="noopener">
-      Quiero mi Hydro 8
+    <div class="section-label">Respaldo científico</div>
+    <h2>La ciencia del hidrógeno molecular.</h2>
+    <p>El hidrógeno molecular es una de las moléculas más estudiadas en bienestar y recuperación celular. Los equipos KYK Korea —representados en Chile por Agua Hidrogenada Chile— lo generan a concentraciones estables y medibles. Desde la botella Hydro 8 hasta las estaciones para el hogar, toda la gama lleva esta tecnología a tu rutina diaria.</p>
+    <a class="btn" href="https://aguahidrogenada.cl/collections/all?dt_id=3235305" target="_blank" rel="noopener">
+      Explorar la gama
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
     </a>
   </div>
@@ -423,10 +630,10 @@
 <section class="final">
   <div class="wrap">
     <div class="section-label" style="text-align:center;">Tu rutina anti-inflamatoria</div>
-    <h2>La cámara, en sesión.<br>El agua, todos los días.</h2>
-    <p>Completa el protocolo que ya empezaste en Barox. Aprovecha el beneficio para pacientes y llévate tu Hydro 8.</p>
-    <a class="btn" href="https://aguahidrogenada.cl/products/hydro-8?dt_id=3235305" target="_blank" rel="noopener">
-      Comprar con beneficio Barox
+    <h2>La cámara, en sesión.<br>El agua hidrogenada, todos los días.</h2>
+    <p>Completa el protocolo que ya empezaste en Barox. Elige tu solución de agua hidrogenada con un 10% OFF exclusivo para clientes Barox.</p>
+    <a class="btn" href="https://aguahidrogenada.cl/collections/all?dt_id=3235305" target="_blank" rel="noopener">
+      Ver la gama con 10% OFF
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
     </a>
   </div>
@@ -452,6 +659,15 @@
     </small>
   </div>
 </footer>
+
+<!-- STICKY MOBILE BUY BAR -->
+<div class="buybar">
+  <div class="buybar-info">
+    <div class="buybar-label">10% OFF clientes Barox</div>
+    <div><span class="buybar-price">$134.990</span><span class="buybar-was">$149.990</span></div>
+  </div>
+  <a class="btn" href="https://aguahidrogenada.cl/products/hydro-8?dt_id=3235305" target="_blank" rel="noopener">Comprar</a>
+</div>
 
 </body>
 </html>
